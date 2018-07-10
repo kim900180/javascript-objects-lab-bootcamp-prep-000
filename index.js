@@ -5,3 +5,8 @@ function updateObjectWithKeyAndValue(object, key, value) {
   obj[key] = value
   return obj
 }
+
+function destructivelyUpdateObjectWithKeyAndVlue(object, key, value) {
+  delete object[key]
+  return object
+}
